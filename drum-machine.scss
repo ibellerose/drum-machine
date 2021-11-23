@@ -1,0 +1,50 @@
+
+@mixin center-drums{
+    top: 50%;
+    left: 35%;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+}
+
+@mixin color-test {
+    background-color: brown;
+}
+
+body{
+    background-color: rgb(119, 118, 118);
+    @include color-test;
+}
+
+.drum-pad{
+    background-color: aquamarine;
+    padding: 25px;
+    margin: 10px;
+    
+}
+
+.button-wrapper{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    @include center-drums;
+    top: 50%;
+    left: 35%;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+}
+#machine{
+    //background-color: rgb(59, 59, 59);
+    background-image: repeating-linear-gradient(45deg,gray 5%, black 10%);
+    //border-radius: 5px;
+    border-width: thick;
+    border-color: rgb(245, 245, 245);
+    padding: 210px;
+    @include center-drums;
+    top: 50%;
+    left: 35%;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+    
+}
