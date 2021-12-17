@@ -1,12 +1,20 @@
+/*
+@mixin center-drums{
+    top: 50%;
+    left: 5em;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+}
+*/
 body {
   background-color: #777676;
-  background-color: brown;
 }
 
 .drum-pad {
   background-color: aquamarine;
   padding: 25px;
-  margin: 10px;
+  margin: 5px;
 }
 
 .button-wrapper {
@@ -15,29 +23,31 @@ body {
   -ms-grid-columns: 100px 100px 100px;
       grid-template-columns: 100px 100px 100px;
   top: 50%;
-  left: 35%;
+  left: 10em;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 50%;
-  left: 35%;
-  position: absolute;
-  transform: translate(-50%, -50%);
 }
 
 #machine {
   background-image: repeating-linear-gradient(45deg, gray 5%, black 10%);
-  border-width: thick;
-  border-color: whitesmoke;
-  padding: 210px;
+  padding: 150px 520px 150px 100px;
   top: 50%;
-  left: 35%;
+  left: 22em;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 50%;
-  left: 35%;
+  border: 5px solid white;
+}
+
+#text {
+  background-color: #c2b8b8;
+  text-align: center;
+  height: 40px;
+  width: 275px;
   position: absolute;
-  transform: translate(-50%, -50%);
+  left: 10em;
+  bottom: 5em;
+  border: 2px solid white;
 }
 /*# sourceMappingURL=drum-machine.css.map */
